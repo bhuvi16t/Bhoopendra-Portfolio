@@ -4,7 +4,7 @@ A modern and fully responsive personal portfolio website built to showcase my sk
 
 ## 🚀 Live Demo
 
-👉 [*Portfolio*](https://bhuvi16t.github.io/Bhoopendra-Portfolio/)
+👉 [**Portfolio**](https://bhuvi16t.github.io/Bhoopendra-Portfolio/)
 
 ---
 
