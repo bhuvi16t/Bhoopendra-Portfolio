@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bhoopendra Vishwakarma - Data Analyst specializing in SQL, Python, Power BI, and Excel. Transforming raw data into actionable business insights.">
+    <meta name="keywords" content="Data Analyst, SQL, Python, Power BI, Excel, Portfolio, Bhoopendra Vishwakarma">
+    <meta name="author" content="Bhoopendra Vishwakarma">
+    <meta name="theme-color" content="#0B1120">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Bhoopendra Vishwakarma | Data Analyst Portfolio">
+    <meta property="og:description" content="Data Analyst specializing in SQL, Python, Power BI, and Excel. Transforming raw data into actionable business insights.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bhoopendravishwakarma.dev">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/0B1120/6C63FF?text=BV+Portfolio">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bhoopendra Vishwakarma | Data Analyst Portfolio">
+    <meta name="twitter:description" content="Data Analyst specializing in SQL, Python, Power BI, and Excel.">
+
+    <title>Bhoopendra Vishwakarma | Data Analyst Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ================= PAGE LOADER ================= -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="loader-bracket">&lt;</span>BV<span class="loader-bracket">/&gt;</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= SCROLL PROGRESS BAR ================= -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ================= CURSOR GLOW EFFECT ================= -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- ================= NAVIGATION ================= -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" aria-label="Home">
+                <span class="logo-bracket">&lt;</span>BV<span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <div class="nav-links" id="navLinks" role="menubar">
+                <a href="#hero" class="nav-link active" role="menuitem">Home</a>
+                <a href="#about" class="nav-link" role="menuitem">About</a>
+                <a href="#skills" class="nav-link" role="menuitem">Skills</a>
+                <a href="#experience" class="nav-link" role="menuitem">Experience</a>
+                <a href="#projects" class="nav-link" role="menuitem">Projects</a>
+                <a href="#why-hire" class="nav-link" role="menuitem">Why Me</a>
+                <a href="#contact" class="nav-link" role="menuitem">Contact</a>
+            </div>
+
+            <div class="nav-right">
+                <div class="open-to-work-badge">
+                    <span class="pulse-dot"></span>
+                    <span>Open to Work</span>
+                </div>
+                <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+            <div class="hero-glow"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-chart-line"></i>
+                <span>Data Analyst</span>
+                <span class="badge-dot"></span>
+                <span>Available for hire</span>
+            </div>
+
+            <h1 class="hero-title">
+                Hi, I'm <span class="gradient-text">Bhoopendra</span>
+            </h1>
+
+            <div class="hero-subtitle">
+                <span class="typing-wrapper">
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="cursor">|</span>
+                </span>
+            </div>
+
+            <p class="hero-description">
+                I transform complex datasets into clear, actionable business insights. Skilled in SQL, Python, Power BI &amp; Excel with a passion for data-driven storytelling that drives strategic decisions.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Contact Me</span>
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="#" class="btn btn-outline" id="resumeBtn">
+                    <span>Download Resume</span>
+                    <i class="fas fa-download"></i>
+                </a>
+            </div>
+
+            <div class="hero-socials">
+                <a href="https://www.linkedin.com/in/bhoopendra-vishwakarma/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/bhuvi16t" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:bhoopendravi60@gmail.com" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-highlight">
+                            Data Analyst skilled in transforming complex datasets into meaningful business insights that drive strategic decisions.
+                        </p>
+                        <p>
+                            I'm a detail-oriented Data Analyst with a strong foundation in SQL, Python, Power BI, and Excel. My expertise spans data cleaning, exploratory analysis, statistical modeling, and building interactive dashboards that tell compelling data stories.
+                        </p>
+                        <p>
+                            I'm passionate about applying data-driven solutions to solve real-world business problems. Currently pursuing B.Tech in Computer Science Engineering at Bansal Group of Institute, Bhopal, with hands-on internship experience at Codveda Technology.
+                        </p>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-database"></i></div>
+                            <div class="stat-info">
+                                <span class="stat-number" data-target="50000">0</span><span class="stat-suffix">+</span>
+                                <span class="stat-label">Records Analyzed</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-chart-bar"></i></div>
+                            <div class="stat-info">
+                                <span class="stat-number" data-target="5">0</span><span class="stat-suffix">+</span>
+                                <span class="stat-label">Dashboards Built</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-certificate"></i></div>
+                            <div class="stat-info">
+                                <span class="stat-number" data-target="3">0</span>
+                                <span class="stat-label">Certifications</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                            <div class="stat-info">
+                                <span class="stat-number" data-target="4">0</span><span class="stat-suffix">+</span>
+                                <span class="stat-label">Projects Done</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-3d">
+                        <div class="card-front">
+                            <div class="card-avatar">
+                                <div class="avatar-ring">
+                                    <div class="avatar-inner">BV</div>
+                                </div>
+                            </div>
+                            <h3>Bhoopendra Vishwakarma</h3>
+                            <p class="card-role">Data Analyst</p>
+                            <p class="card-location"><i class="fas fa-map-marker-alt"></i> Bhopal, Madhya Pradesh</p>
+                            <div class="card-tags">
+                                <span>Python</span>
+                                <span>SQL</span>
+                                <span>Power BI</span>
+                                <span>Excel</span>
+                            </div>
+                            <div class="card-contact">
+                                <a href="https://www.linkedin.com/in/bhoopendra-vishwakarma/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://github.com/bhuvi16t" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="mailto:bhoopendravi60@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SKILLS SECTION ================= -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Programming & Libraries -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h3>Programming &amp; Libraries</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-tag-item">Python</div>
+                        <div class="skill-tag-item">Pandas</div>
+                        <div class="skill-tag-item">NumPy</div>
+                        <div class="skill-tag-item">Matplotlib</div>
+                        <div class="skill-tag-item">Seaborn</div>
+                        <div class="skill-tag-item">Scikit-Learn</div>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h3>Database &amp; SQL</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-tag-item">SQL</div>
+                        <div class="skill-tag-item">Joins &amp; Aggregations</div>
+                        <div class="skill-tag-item">CTEs &amp; Window Functions</div>
+                        <div class="skill-tag-item">Data Cleaning</div>
+                    </div>
+                </div>
+
+                <!-- Visualization -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-chart-pie"></i></div>
+                        <h3>Data Visualization</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-tag-item">Power BI (DAX)</div>
+                        <div class="skill-tag-item">Excel (Pivot Tables)</div>
+                        <div class="skill-tag-item">KPI Dashboards</div>
+                        <div class="skill-tag-item">ETL Processes</div>
+                    </div>
+                </div>
+
+                <!-- Statistics & ML -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <h3>Statistics &amp; ML</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-tag-item">Descriptive Statistics</div>
+                        <div class="skill-tag-item">Hypothesis Testing</div>
+                        <div class="skill-tag-item">A/B Testing</div>
+                        <div class="skill-tag-item">Regression &amp; Classification</div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                        <h3>Tools &amp; Workflow</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-tag-item">Git &amp; GitHub</div>
+                        <div class="skill-tag-item">VS Code</div>
+                        <div class="skill-tag-item">Jupyter Notebook</div>
+                        <div class="skill-tag-item">Google Colab</div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-comments"></i></div>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-tag-item">Data Storytelling</div>
+                        <div class="skill-tag-item">Problem Solving</div>
+                        <div class="skill-tag-item">Analytical Thinking</div>
+                        <div class="skill-tag-item">Attention to Detail</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= EXPERIENCE SECTION ================= -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;experience&gt;</span>
+                <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Data Analyst Intern</h3>
+                                <p class="timeline-company">
+                                    Codveda Technology
+                                    <span class="remote-badge"><i class="fas fa-wifi"></i> Remote</span>
+                                </p>
+                            </div>
+                            <span class="timeline-date">Jan 2025 - Present</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Preprocessed and standardized raw datasets, improving overall data quality by <strong>20%</strong></span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Conducted exploratory data analysis (EDA) to identify trends and anomalies for business insights</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Created interactive dashboards in Power BI, Matplotlib, and Seaborn to present actionable insights</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Automated reporting workflows, reducing manual effort by <strong>15%</strong></span>
+                            </li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Python</span>
+                            <span>Power BI</span>
+                            <span>Excel</span>
+                            <span>EDA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PROJECTS SECTION ================= -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- ===== PROJECT CARD 1: Cancer Data Analysis ===== -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <!-- Replace src with your project screenshot -->
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-overlay-buttons">
+                                <a href="#" class="project-link-btn" aria-label="View GitHub Repo" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                                <a href="#" class="project-link-btn" aria-label="View Live Demo" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Cancer Data Analysis</h3>
+                        <p class="project-business-problem">
+                            <strong>Business Problem:</strong> Healthcare providers needed to understand treatment cost variations and survival outcomes across cancer types, stages, and demographics.
+                        </p>
+                        <p class="project-solution">
+                            <strong>Solution:</strong> Performed comprehensive EDA on 50,000+ patient records, applied Kruskal-Wallis hypothesis testing to validate treatment cost variations, and delivered actionable insights through statistical analysis.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Seaborn</span>
+                            <span>SciPy</span>
+                            <span>Scikit-Learn</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="btn btn-sm btn-secondary" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ===== PROJECT CARD 2: Amazon Sales Dashboard ===== -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder project-bg-amazon">
+                            <i class="fab fa-amazon"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-overlay-buttons">
+                                <a href="#" class="project-link-btn" aria-label="View GitHub Repo" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                                <a href="#" class="project-link-btn" aria-label="View Live Demo" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Amazon Sales Dashboard</h3>
+                        <p class="project-business-problem">
+                            <strong>Business Problem:</strong> E-commerce businesses needed visibility into regional sales performance, seller metrics, and order status distributions to optimize strategy.
+                        </p>
+                        <p class="project-solution">
+                            <strong>Solution:</strong> Built an interactive Power BI dashboard with multiple views (Overview, Product, Regional) using DAX measures to track KPIs and identify top-performing states and cities.
+                        </p>
+                        <div class="project-tech">
+                            <span>Power BI</span>
+                            <span>DAX</span>
+                            <span>ETL</span>
+                            <span>KPIs</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="btn btn-sm btn-secondary" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ===== PROJECT CARD 3: PhonePe Dashboard ===== -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder project-bg-phonepe">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-overlay-buttons">
+                                <a href="#" class="project-link-btn" aria-label="View GitHub Repo" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                                <a href="#" class="project-link-btn" aria-label="View Live Demo" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">PhonePe Dashboard</h3>
+                        <p class="project-business-problem">
+                            <strong>Business Problem:</strong> Digital payment platforms require real-time visibility into transaction volumes, user engagement, and regional adoption patterns.
+                        </p>
+                        <p class="project-solution">
+                            <strong>Solution:</strong> Designed an interactive dashboard analyzing PhonePe transaction data, uncovering trends in payment adoption, user growth, and geographic distribution patterns.
+                        </p>
+                        <div class="project-tech">
+                            <span>Power BI</span>
+                            <span>DAX</span>
+                            <span>SQL</span>
+                            <span>Data Modeling</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="btn btn-sm btn-secondary" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ===== PROJECT CARD 4: Mobile Price Prediction ===== -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder project-bg-prediction">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-overlay-buttons">
+                                <a href="#" class="project-link-btn" aria-label="View GitHub Repo" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                                <a href="#" class="project-link-btn" aria-label="View Live Demo" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Mobile Price Prediction</h3>
+                        <p class="project-business-problem">
+                            <strong>Business Problem:</strong> Smartphone manufacturers needed to understand which features most influence pricing to optimize product positioning.
+                        </p>
+                        <p class="project-solution">
+                            <strong>Solution:</strong> Built a predictive model using Scikit-Learn to estimate mobile prices based on specifications. Applied feature engineering and evaluated model performance with accuracy metrics.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Scikit-Learn</span>
+                            <span>Pandas</span>
+                            <span>Matplotlib</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="btn btn-sm btn-secondary" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= WHY WORK WITH ME SECTION ================= -->
+    <section class="section" id="why-hire">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;why-me&gt;</span>
+                <h2 class="section-title">Why Work <span class="gradient-text">With Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Data-Driven Mindset</h3>
+                    <p>Every recommendation is backed by data. I don't guess — I analyze, validate, and present evidence-based insights.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-eye"></i></div>
+                    <h3>Visual Storytelling</h3>
+                    <p>Complex data becomes clear through compelling dashboards and visualizations that stakeholders actually understand.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Fast Learner</h3>
+                    <p>I quickly adapt to new tools, domains, and data environments. Currently expanding my skills in advanced analytics.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Collaborative Approach</h3>
+                    <p>I work closely with teams to understand business needs and deliver analytics solutions that create real impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= GITHUB, LINKEDIN & RESUME SECTION ================= -->
+    <section class="section section-alt" id="resources">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;connect&gt;</span>
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="resources-grid">
+                <a href="https://github.com/bhuvi16t" target="_blank" rel="noopener noreferrer" class="resource-card github-card">
+                    <div class="resource-icon"><i class="fab fa-github"></i></div>
+                    <h3>GitHub</h3>
+                    <p>Explore my repositories, data projects, and code samples</p>
+                    <span class="resource-link">github.com/bhuvi16t <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="https://www.linkedin.com/in/bhoopendra-vishwakarma/" target="_blank" rel="noopener noreferrer" class="resource-card linkedin-card">
+                    <div class="resource-icon"><i class="fab fa-linkedin-in"></i></div>
+                    <h3>LinkedIn</h3>
+                    <p>Connect with me professionally and view my endorsements</p>
+                    <span class="resource-link">linkedin.com/in/bhoopendra-vishwakarma <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#" class="resource-card resume-card" id="resumeCard">
+                    <div class="resource-icon"><i class="fas fa-file-alt"></i></div>
+                    <h3>Resume</h3>
+                    <p>Download my complete resume with all experience and skills</p>
+                    <span class="resource-link">Download PDF <i class="fas fa-download"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CERTIFICATIONS SECTION ================= -->
+    <section class="section" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;certifications&gt;</span>
+                <h2 class="section-title">Certifications &amp; <span class="gradient-text">Credentials</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="cert-info">
+                        <h4>Deloitte Australia</h4>
+                        <p>Data Analytics Job Credential</p>
+                        <span class="cert-badge">Verified</span>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-eye"></i></div>
+                    <div class="cert-info">
+                        <h4>Tata Group</h4>
+                        <p>Data Visualisation Job Simulation</p>
+                        <span class="cert-badge">Verified</span>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-database"></i></div>
+                    <div class="cert-info">
+                        <h4>SQL for Data Science</h4>
+                        <p>Professional Credential</p>
+                        <span class="cert-badge">Verified</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p class="contact-text">
+                        I'm actively looking for full-time Data Analyst roles. Whether you have a question, an opportunity, or just want to connect — I'd love to hear from you.
+                    </p>
+
+                    <div class="contact-cards">
+                        <a href="mailto:bhoopendravi60@gmail.com" class="contact-card">
+                            <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="contact-card-label">Email</span>
+                                <span class="contact-card-value">bhoopendravi60@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/bhoopendra-vishwakarma/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="contact-card-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div>
+                                <span class="contact-card-label">LinkedIn</span>
+                                <span class="contact-card-value">Connect with me</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/bhuvi16t" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="contact-card-icon"><i class="fab fa-github"></i></div>
+                            <div>
+                                <span class="contact-card-label">GitHub</span>
+                                <span class="contact-card-value">View my repos</span>
+                            </div>
+                        </a>
+                        <a href="mailto:bhoopendravi60@gmail.com" class="contact-card">
+                            <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <span class="contact-card-label">Location</span>
+                                <span class="contact-card-value">Bhopal, Madhya Pradesh</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="formName" name="name" required placeholder=" " autocomplete="name">
+                            <label for="formName">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="formEmail" name="email" required placeholder=" " autocomplete="email">
+                            <label for="formEmail">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="formSubject" name="subject" required placeholder=" ">
+                            <label for="formSubject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="formMessage" name="message" rows="5" required placeholder=" "></textarea>
+                            <label for="formMessage">Your Message</label>
+                        </div>
+                        <!-- Web3Forms Access Key — Replace with your own key from https://web3forms.com -->
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                        <input type="hidden" name="subject" value="New Contact from Portfolio">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>BV<span class="logo-bracket">/&gt;</span>
+                </a>
+                <p class="footer-text">
+                    Designed &amp; Built by <span class="gradient-text">Bhoopendra Vishwakarma</span>
+                </p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/bhoopendra-vishwakarma/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/bhuvi16t" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:bhoopendravi60@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-copy">&copy; 2026 Bhoopendra Vishwakarma. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= BACK TO TOP BUTTON ================= -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ================= TOAST NOTIFICATION ================= -->
+    <div class="toast" id="toast">
+        <div class="toast-icon"><i class="fas fa-check-circle"></i></div>
+        <div class="toast-message" id="toastMessage">Message sent successfully!</div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
