@@ -825,6 +825,7 @@ input, textarea {
     justify-content: center;
     padding: 3px;
     animation: ringRotate 6s linear infinite;
+    filter: none !important; /* पुराना कोई भी फ़िल्टर हटाने के लिए */
 }
 
 @keyframes ringRotate {
@@ -836,16 +837,14 @@ input, textarea {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: var(--bg-card-solid);
+    background: var(--bg-card-solid); /* आपके कार्ड का सॉलिड बैकग्राउंड */
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
-    font-weight: 800;
-    background: var(--gradient-1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    overflow: hidden; /* ताकि फोटो के कोने गोल घेरे से बाहर न निकलें */
+    
+    /* 🔄 रिंग के साथ फोटो को घूमने से रोकने के लिए */
+    animation: ringRotate 6s linear infinite reverse; 
 }
 
 .card-front h3 {
