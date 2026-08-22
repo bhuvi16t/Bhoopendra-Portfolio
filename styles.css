@@ -2003,25 +2003,3 @@ div.avatar-inner,
 .avatar-inner::before {
     display: none !important;
 }
-/* 1. बैकग्राउंड क्लिप को टेक्स्ट से हटाकर नॉर्मल करने के लिए */
-.avatar-inner {
-    -webkit-background-clip: initial !important;
-    -webkit-text-fill-color: initial !important;
-    background-clip: initial !important;
-    background: var(--bg-card-solid) !important; /* डिफ़ॉल्ट डार्क बैकग्राउंड */
-}
-
-/* 2. इमेज को पूरी तरह सॉलिड (बिना ट्रांसपेरेंसी के) दिखाने के लिए */
-.avatar-img, .avatar-inner img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    border-radius: 50% !important;
-    display: block !important;
-    
-    /* किसी भी तरह का मास्क या ब्लेंड मोड हटाने के लिए */
-    mix-blend-mode: normal !important;
-    filter: none !important;
-    opacity: 1 !important;
-    -webkit-background-clip: initial !important;
-}
