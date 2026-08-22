@@ -1962,4 +1962,24 @@ input, textarea {
     .container {
         max-width: 1320px;
     }
+   
+}
+/* 1. फोटो को परफेक्ट गोल करने और रिंग में फिट करने के लिए */
+.avatar-inner {
+    overflow: hidden !important; /* बाहर जा रहे कोनों को छुपाने के लिए */
+    border-radius: 50% !important; /* बॉक्स को गोल करने के लिए */
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; /* फोटो को बिना खींचे फिट करने के लिए */
+    border-radius: 50% !important; /* फोटो को गोल करने के लिए */
+    
+    /* 2. चेहरे से नीला/हरा Hue (कलर) इफ़ेक्ट हटाने के लिए */
+    filter: none !important;      /* अगर कोई फ़िल्टर लगा हो तो हटाने के लिए */
+    mix-blend-mode: normal !important; /* कलर ब्लेंडिंग बंद करने के लिए */
 }
