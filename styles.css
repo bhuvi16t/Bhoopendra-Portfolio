@@ -2003,3 +2003,73 @@ div.avatar-inner,
 .avatar-inner::before {
     display: none !important;
 }
+
+/* ============================================================
+   FIX: Profile Image Rounding & Removing Hue/Text Effect
+   ============================================================ */
+
+/* 1. रिंग के एनीमेशन को सिर्फ बॉर्डर तक सीमित रखने और इमेज को सुरक्षित करने के लिए */
+.avatar-ring {
+    animation: ringRotate 6s linear infinite;
+    overflow: visible !important;
+}
+
+/* 2. इमेज के कंटेनर से पुराना टेक्स्ट ग्रेडिएंट और क्लिपिंग पूरी तरह हटाने के लिए */
+.avatar-inner {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    
+    /* टेक्स्ट वाले इफ़ेक्ट को बंद करना */
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: initial !important;
+    background-clip: initial !important;
+    background: var(--bg-card-solid) !important; /* ओरिजिनल डार्क बैकग्राउंड */
+}
+
+/* ============================================================
+   FIX: Profile Image Rounding & Removing Hue/Text Effect
+   ============================================================ */
+
+/* 1. रिंग के एनीमेशन को सिर्फ बॉर्डर तक सीमित रखने और इमेज को सुरक्षित करने के लिए */
+.avatar-ring {
+    animation: ringRotate 6s linear infinite;
+    overflow: visible !important;
+}
+
+/* 2. इमेज के कंटेनर से पुराना टेक्स्ट ग्रेडिएंट और क्लिपिंग पूरी तरह हटाने के लिए */
+.avatar-inner {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    
+    /* टेक्स्ट वाले इफ़ेक्ट को बंद करना */
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: initial !important;
+    background-clip: initial !important;
+    background: var(--bg-card-solid) !important; /* ओरिजिनल डार्क बैकग्राउंड */
+}
+
+/* 3. इमेज को परफेक्ट गोल करने और रंग को बिल्कुल असली (Original) रखने के लिए */
+.avatar-img, 
+.avatar-inner img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    display: block !important;
+    
+    /* रिंग के hue-rotate एनीमेशन के असर को इमेज पर बेअसर (Cancel) करना */
+    animation: none !important;
+    filter: hue-rotate(0deg) !important; 
+    mix-blend-mode: normal !important;
+    opacity: 1 !important;
+}
