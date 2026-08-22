@@ -1964,22 +1964,42 @@ input, textarea {
     }
    
 }
-/* 1. फोटो को परफेक्ट गोल करने और रिंग में फिट करने के लिए */
-.avatar-inner {
-    overflow: hidden !important; /* बाहर जा रहे कोनों को छुपाने के लिए */
-    border-radius: 50% !important; /* बॉक्स को गोल करने के लिए */
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
+/* 1. फोटो को परफेक्ट गोल करने और कोनों को पूरी तरह छिपाने के लिए */
+div[class*="avatar"] {
+    border-radius: 50% !important;
+    overflow: hidden !important;
 }
 
-.avatar-img {
+.avatar-inner, 
+div.avatar-inner, 
+#contactForm ~ * .avatar-inner {
     width: 100% !important;
     height: 100% !important;
-    object-fit: cover !important; /* फोटो को बिना खींचे फिट करने के लिए */
-    border-radius: 50% !important; /* फोटो को गोल करने के लिए */
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: transparent !important; /* पुराना बैकग्राउंड कलर हटाने के लिए */
+}
+
+/* इमेज का डिब्बा और कोनों को फिक्स करना */
+.avatar-img, 
+.avatar-inner img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    display: block !important;
     
-    /* 2. चेहरे से नीला/हरा Hue (कलर) इफ़ेक्ट हटाने के लिए */
-    filter: none !important;      /* अगर कोई फ़िल्टर लगा हो तो हटाने के लिए */
-    mix-blend-mode: normal !important; /* कलर ब्लेंडिंग बंद करने के लिए */
+    /* 2. चेहरे से नीला/हरा Hue इफ़ेक्ट बिल्कुल बंद करने के लिए */
+    filter: none !important;
+    mix-blend-mode: normal !important;
+    opacity: 1 !important;
+}
+
+/* अगर किसी सूडो एलिमेंट (जैसे ::after या ::before) से चेहरे पर नीला रंग आ रहा हो तो उसे छुपाने के लिए */
+.avatar-inner::after, 
+.avatar-inner::before {
+    display: none !important;
 }
