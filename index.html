@@ -738,34 +738,41 @@
                 </div>
 
                 <div class="contact-form-wrapper">
+                    <!-- यहाँ से action और method हटा दिया गया है ताकि पेज चेंज न हो -->
                     <form class="contact-form" id="contactForm">
+                        
                         <div class="form-group">
                             <input type="text" id="formName" name="name" required placeholder=" " autocomplete="name">
                             <label for="formName">Your Name</label>
                         </div>
+                        
                         <div class="form-group">
                             <input type="email" id="formEmail" name="email" required placeholder=" " autocomplete="email">
                             <label for="formEmail">Your Email</label>
                         </div>
+                        
                         <div class="form-group">
                             <input type="text" id="formSubject" name="subject" required placeholder=" ">
                             <label for="formSubject">Subject</label>
                         </div>
+                        
                         <div class="form-group">
                             <textarea id="formMessage" name="message" rows="5" required placeholder=" "></textarea>
                             <label for="formMessage">Your Message</label>
                         </div>
-                        <!-- Web3Forms Access Key — Replace with your own key from https://web3forms.com -->
-                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                        
+                        <!-- ⚠️ यहाँ 'YOUR_ACCESS_KEY_HERE' की जगह अपनी असली चाबी डालें -->
+                        <input type="hidden" name="access_key" value="f443cdee-84f7-4033-8af0-1756861d1be0">
                         <input type="hidden" name="subject" value="New Contact from Portfolio">
                         <input type="checkbox" name="botcheck" class="hidden" style="display:none">
-
+                
                         <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
                             <span>Send Message</span>
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
                 </div>
+
             </div>
         </div>
     </section>
